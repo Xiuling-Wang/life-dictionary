@@ -6,6 +6,11 @@
   <meta name="theme-color" content="#f3f7f5">
   <meta name="description" content="个人使用的旅行、健身、游泳、商业与数码工具词典。">
   <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="我的生活词典">
+  <meta property="og:description" content="旅行、健身、游泳、商业常识与数码工具的独立查询词典。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://everyday-glossary.pages.dev/">
+  <link rel="canonical" href="https://everyday-glossary.pages.dev/">
   <title>我的生活词典</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='5' y='5' width='54' height='54' rx='18' fill='%23dcefe9'/%3E%3Cpath d='M18 18h18a10 10 0 0 1 10 10v18H28a10 10 0 0 1-10-10Z' fill='%235f8d83'/%3E%3Cpath d='M28 18h18v18a10 10 0 0 1-10 10H28Z' fill='%23a9d7ce'/%3E%3Cpath d='M28 20v25' stroke='white' stroke-width='3'/%3E%3C/svg%3E">
   <style>
@@ -39,11 +44,9 @@
     button, input { font: inherit; }
     a { color: inherit; }
     .page { width: min(1120px, calc(100% - 30px)); margin: 0 auto; }
-    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 22px 0 16px; }
+    .topbar { display: flex; align-items: center; gap: 18px; padding: 22px 0 16px; }
     .brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 790; letter-spacing: -.02em; }
     .brand svg { width: 39px; height: 39px; }
-    .back-link { padding: 8px 13px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,.68); color: #647475; text-decoration: none; font-size: 13px; font-weight: 700; }
-    .back-link:hover { color: var(--green-dark); border-color: #a7c9c0; }
 
     .hero {
       position: relative;
@@ -143,7 +146,6 @@
     .empty { grid-column: 1 / -1; padding: 50px 20px; border: 1px dashed #bfcfca; border-radius: 22px; text-align: center; color: var(--muted); background: rgba(255,255,255,.38); }
     .note { margin: 38px 0 0; padding: 18px 20px; border: 1px solid #e4ddcf; border-radius: 18px; background: #faf5ea; color: #756c5c; font-size: 12px; }
     footer { display: flex; justify-content: space-between; gap: 18px; margin: 42px 0 26px; padding-top: 20px; border-top: 1px solid var(--line); color: #83908f; font-size: 12px; }
-    footer a { color: #5d7571; text-decoration: none; font-weight: 700; }
     .toast { position: fixed; z-index: 50; left: 50%; bottom: 25px; transform: translate(-50%, 16px); padding: 9px 14px; border-radius: 12px; background: #2c4543; color: white; font-size: 12px; opacity: 0; pointer-events: none; transition: .2s ease; }
     .toast.show { opacity: 1; transform: translate(-50%, 0); }
 
@@ -154,7 +156,6 @@
     @media (max-width: 620px) {
       .page { width: min(100% - 20px, 1120px); }
       .topbar { padding-top: 13px; }
-      .back-link { padding: 7px 10px; font-size: 12px; }
       .hero { padding: 27px 20px; border-radius: 28px; }
       .hero::after { width: 180px; height: 180px; opacity: .62; }
       .group-strip { grid-template-columns: repeat(2, 1fr); gap: 8px; }
@@ -177,7 +178,6 @@
         <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="4" y="4" width="56" height="56" rx="19" fill="#dcefe9"/><path d="M17 17h18a11 11 0 0 1 11 11v19H28a11 11 0 0 1-11-11Z" fill="#5f8d83"/><path d="M28 17h19v19a11 11 0 0 1-11 11h-8Z" fill="#a9d7ce"/><path d="M28 19v27" stroke="#fff" stroke-width="3"/></svg>
         <span>我的生活词典</span>
       </div>
-      <a class="back-link" href="https://ai-baike.pages.dev/">AI 上手词典 ↗</a>
     </header>
 
     <main>
@@ -186,7 +186,7 @@
           <span class="eyebrow">PERSONAL REFERENCE</span>
           <h1>我的生活词典</h1>
           <p class="lead">把旅行、健身、游泳、商业常识和数码工具放在一个只为自己服务的查询本里。</p>
-          <p class="hero-meta">共 <strong>303</strong> 个词条 · 仅部署在 GitHub Pages</p>
+          <p class="hero-meta">共 <strong>303</strong> 个词条 · 独立生活查询站</p>
         </div>
       </section>
 
@@ -213,8 +213,7 @@
     </main>
 
     <footer>
-      <span>我的生活词典 · GitHub-only</span>
-      <a href="https://ai-baike.pages.dev/">返回 AI 上手词典</a>
+      <span>我的生活词典 · 独立站点</span>
     </footer>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
